@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo-App</title>
+</head>
+
+<body>
+
+    <div class="app" id="app">
+        <h1 class="wp">Todo-App Using HTML, CSS & Javascript</h1>
+        <div class="addnew">
+            <button id="Add_Btn">Add New</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="flex-container" id="form">
+                    <div class="flex-item">
+                        <h1>Input Details</h1>
+                    </div>
+                    <div class="flex-item">
+                        <label class="item"> Roll No:</label>
+                        <input class="item1" type="number" id="roll_input">
+                    </div>
+                    <div id="msg1" class="msg"></div>
+                    <div class="flex-item">
+                        <label class="item"> Name: </label>
+                        <input class="item1" type="text" id="name_input">
+                    </div>
+                    <div id="msg2" class="msg"></div>
+                    <div class="flex-item">
+                        <label class="item"> Father's Name: </label>
+                        <input type="text" class="item1" id="fname_input">
+                    </div>
+                    <div id="msg3" class="msg"></div>
+                    <div class="flex-item">
+                        <label class="item"> Phone No: </label>
+                        <input type="number" class="item1" id="phone_input">
+                    </div>
+                    <div id="msg4" class="msg"></div>
+                    <div class="flex-item">
+                        <label class="item"> Email: </label>
+                        <input type="email" class="item1" id="email_input">
+                    </div>
+                    <div id="msg5" class="msg"></div>
+                    <div class="flex-item">
+                        <label class="item"> DOB: </label>
+                        <input type="date" class="item1" id="dob_input">
+                    </div>
+                    <div id="msg6" class="msg"></div>
+
+                    <div class="btn">
+                        <input type="button" value="Cancel" class="close" id="close">
+                        <button onclick="formValidation()" type="submit" class="save" id="save">Save</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <h2>Student Details</h2>
+        <table class="table">
+
+            <th class="table-row ">
+                <td class="table-header">Roll No</td>
+                <td class="table-header">Name</td>
+                <td class="table-header">FName</td>
+                <td class="table-header">Phone</td>
+                <td class="table-header">Email</td>
+                <td class="table-header">DOB</td>
+                <td class="table-header">Actions</td>
+            </th>
+        </table>
+        <!-- <h2>new</h2>
+        <table id="${y}">
+            <tr>
+              <td>${x.roll}</td>
+              <td>${x.name}</td>
+              <td>${x.fname}</td>
+              <td>${x.phone}</td>
+              <td>${x.email}</td>
+              <td>${x.dob}</td>
+              <td id="options">
+                <button href="" id="myedit" onClick="EditData(this)">Edit</button>
+              </td>
+              <td id="options">
+                <button type="text/html" href="" id="mydelete" onClick="DeleteData(this);createData()">Delete</button>
+              </td>
+            </tr>
+          </table> -->
+          
+
+        <div id="newdata" class="newdata">
+
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
